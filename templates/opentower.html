@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+{% block contents %}
+<script>underline(5);</script>
+<p class='center raised'><a href="https://open-tower.com"><img class=logo src=otlogo.png></a></p>
+{% if request.MOBILE %}
+    <p><a href="https://open-tower.com"><span class=ot>Open Tower</span></a> de­vel­ops free, open source tech­nolo­gies in ser­vice of a more trans­par­ent, in­clu­sive and con­ve­nient acad­e­mia. We fo­cus on var­i­ous as­pects of aca­d­e­mic life, in­clud­ing pub­lish­ing, teach­ing and out­reach be­yond the aca­d­e­mic com­mu­nity.</p>
+    <br>
+    <p><span class=ot>Open Tower</span> was founded by myself and <a href="https://www.k-state.edu/philos/people/faculty/leachkrouse.html">Graham Leach-Krouse</a>.</p>
+    <br>
+    <p class=proj>current projects:</p>
+    <p class='carnap cv ects'><a href="http://carnap.io">Carnap</a></p>
+    <p class='margy cv ects'><a href="https://margymail.com">MARGY</a></p>
+    <p class='pop cv ects'><a class=black target='_blank' href="https://populusjournal.com">Populus</a></p>
+    <p class='pt cv ects'><a class=black target='_blank' href="http://personal.bgsu.edu/~faracid/pt">Philosophical<br>Trajectories</a></p>
+{% else %}
+    <table class=tower>
+        <tr>
+        <td class=desc rowspan=5>
+            <p><a href="https://open-tower.com"><span class=ot>Open Tower</span></a> de­vel­ops free, open source tech­nolo­gies in ser­vice of a more trans­par­ent, in­clu­sive and con­ve­nient acad­e­mia. We fo­cus on var­i­ous as­pects of aca­d­e­mic life, in­clud­ing pub­lish­ing, teach­ing and out­reach be­yond the aca­d­e­mic com­mu­nity.</p>
+            <br>
+            <p><span class=ot>Open Tower</span> was founded by myself and <a href="https://www.k-state.edu/philos/people/faculty/leachkrouse.html">Graham Leach-Krouse</a>.</p>
+        </td>
+        <td class=proj>current projects:</td>
+        </tr>
+        <tr><td class='carnap cv ects'><a href="http://carnap.io">Carnap</a></td></tr>
+        <tr><td class='margy cv ects'><a href="https://margymail.com">MARGY</a></td></tr>
+        <tr><td class='pop cv ects'><a class=black target='_blank' href="https://populusjournal.com">Populus</a></td></tr>
+        <tr><td class='pt cv ects'><a class=black target='_blank' href="http://personal.bgsu.edu/~faracid/pt">Philosophical<br>Trajectories</a></td></tr>
+    </table>
+{% endif %}
+{% endblock %}

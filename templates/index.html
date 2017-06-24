@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>David Faraci</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="canonical" href="https://davidfaraci.com">
+<meta property="og:title" content="David Faraci">
+<meta property="og:description" content="David Faraci's Website">
+<meta property="og:image" content="https://davidfaraci.com/favicon.png" />
+<meta property="og:url" content="https://davidfaraci.com" />
+<base target='_blank' />
+<link rel="icon" href="favicon.png">
+
+{% if request.MOBILE %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mobilesheet.css') }}">
+{% else %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet.css') }}">
+{% endif %}
+
+<script>
+function underline(cid) {
+    document.getElementById(cid).style.textDecoration = 'underline';
+    if(cid == '2') { $( '#cvdl' ).fadeIn(600); }
+}
+</script>
+
+<script>
+$(function() {
+    $( ".hamburger" ).click(function() {
+        $( ".menu" ).slideToggle( "fast" );
+    });
+});
+</script>
+
+</head>
+
+<body>
+{% if request.MOBILE %}
+    <header>
+    <button class="hamburger">&#9776;</button>
+    </header>
+
+    <div class="menu">
+    <ul>
+    <a id=1 target='_self' href="/"><li>HOME</li></a>
+    <a id=2 target='_self' href="/cv"><li>CV</li></a>
+    <a id=3 target='_self' href="/publications"><li>PUBLICATIONS</li></a>
+    <a id=4 target='_self' href="/wip"><li>IN PROGRESS</li></a>
+    <a id=5 target='_self' href="/opentower"><li>OPEN TOWER</li></a>
+    <a id=6 target='_self' href="/teaching"><li>TEACHING</li></a>
+    <a id=7 target='_self' href="/misc"><li>MISCELLANY</li></a>
+    </ul>
+    </div>
+{% else %}
+    <div id=titlebar>
+        <p class='df cv'><a target='_self' href="/">David Faraci</a></p>
+        <table class=buttontable>
+        <tr>
+            <td><button id=1 onclick="window.location='/';"><p class='unselected'>Home</p></button></td>
+            <td><button id=2 onclick="window.location='/cv';"><p class='unselected'>CV</p></button></td>
+            <td><button id=3 onclick="window.location='/publications';"><p class='unselected'>Publications</p></button></td>
+            <td><button id=4 onclick="window.location='/wip';"><p class='unselected'>In Progress</p></button></td>
+            <td><button id=5 onclick="window.location='/opentower';"><p class='unselected'>Open Tower</p></button></td>
+            <td><button id=6 onclick="window.location='/teaching';"><p class='unselected'>Teaching</p></button></td>
+            <td><button id=7 onclick="window.location='/misc';"><p class='unselected'>Miscellany</p></button></td>
+        </tr>
+        </table>
+    </div>
+
+    <div id=cvdl>
+        <a href="cv.pdf">Download PDF</a>
+    </div>
+{% endif %}
+
+
+
+<div id=sheet>
+{% block contents %}
+{% endblock %}
+<br><br><br>
+<div class=foot>
+<a href="mailto:david.faraci@georgetown.edu">david.faraci@georgetown.edu</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;June 24, 2017
+</div>
+
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11057378;
+var sc_invisible=1;
+var sc_security="cc896b13";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web statistics"
+href="http://statcounter.com/free-web-stats/"
+target="_blank"><img class="statcounter"
+src="//c.statcounter.com/11057378/0/cc896b13/1/" alt="web
+statistics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

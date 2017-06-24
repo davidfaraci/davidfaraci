@@ -1,0 +1,426 @@
+<html>
+<head>
+<title>GISME Workshop on Methodology in Applied Ethics</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="shortcut icon" href="http://gisme.georgetown.edu/sites/all/themes/gtown_mcdonough/favicon.ico">
+<meta property="og:title" content="GISME Workshop on Methodology in Applied Ethics" />
+<meta property="og:description" content="Organized by David Faraci and Peter Jaworski" />
+<meta property="og:image" content="http://gisme.georgetown.edu/sites/all/themes/gtown_mcdonough/favicon.ico" />
+<meta property="og:url" content="https://davidfaraci.com/workshop" />
+<style>
+p { padding: 0 0 0 0; }
+a:visited { color: #0000FF; text-decoration: none; }
+a:link { color: #0000FF; text-decoration: none; }
+a:hover { color: #0000FF; text-decoration: none; }
+a:active { color: #FF0000; text-decoration: none; }
+
+body {
+    margin: 0;
+    background-color: #C8C8C8;
+}
+
+.page {
+    margin: 0;
+    background-color: #C8C8C8;
+    border-width: 40px 75px 40px 75px;
+    border-style: solid;
+    border-color: #C8C8C8;
+    font-size: 20px;
+    line-height: 1.25em;
+}
+
+.letter {
+    background-color: #FFFFFF;
+    border-width: 1px 1px 1px 1px;
+    border-color: #B8B8B8;
+    border-style: solid;
+    padding: 100px 120px 100px 120px;
+}
+
+ul { margin: 5px 0 0 0; }
+ul.info { margin: 25px 0 35px 0; }
+ul.info li { margin: 0 0 5px 0; }
+a.black { color: #000000; }
+p.gapless { margin-bottom: -1em; }
+
+table { margin: 0 0 0 0; padding: 0 0 0 0; font-size: 20px; line-height: 1.25em; }
+td { margin: 0 0 0 0; padding: 0 0 0 0; text-align: left; vertical-align: top; }
+tr { margin: 0 0 0 0; padding: 0 0 0 0; }
+
+table.menu {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #A9A9A9;
+    border-collapse: collapse;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer
+}
+
+table.menu td {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+td.gap { padding: 0 0 25px 0; }
+td.left { width: 160px; }
+.title { text-align: center; }
+.main { font-weight: bold; font-size: 1.3em; }
+.b { font-weight: bold; }
+.i { font-style: italic; }
+.u { text-decoration: underline; }
+.unselected { color: black; font-weight: normal; }
+.selected { font-weight: bold; color: black; background-color: #F0F0F0 }
+.tab { display: none; }
+.activetab { display: block; }
+.j { text-align: justify; }
+.totop { text-align: right; font-size: .65em }
+.hang { padding-left: 1em; text-indent: -1em; }
+</style>
+
+<script>
+$(document).ready(function(){
+    var select = 'td.unselected';
+    var els = 'div.tab';
+    $(select).click(function(){
+        $(select).removeClass('selected');
+        $(this).addClass('selected');
+        $(els).removeClass('activetab')
+        $("#" + $(this).data("tabname")).addClass('activetab')
+    });
+});
+</script>
+</head>
+
+<body>
+<a name=top></a>
+
+<table class=menu>
+<tr>
+<td data-tabname="abstracts" class="unselected">Abstracts</td>
+<td data-tabname="schedule" class="unselected selected">Workshop Schedule</td>
+<td data-tabname="info" class="unselected">Other Info</td>
+</tr>
+</table>
+</div>
+
+<div class=page>
+<div id=schedule class="letter tab activetab">
+<p class=title>
+    <span class=main>Workshop on Methodology in Applied Ethics</span><br>
+    Georgetown Institute for the Study of Markets and Ethics<br>February 24-26, 2017
+</p>
+<br>
+
+<table>
+<tr>
+    <td class=b colspan=2>Friday 2/24, Rooms 240 and 415 (after 4:00)</td>
+</tr>
+<tr>
+    <td class="left gap">2:15 - 2:30</td>
+    <td class=gap>Opening Remarks: David Faraci &amp; Peter Jaworski</td>
+</tr>
+<tr>
+    <td>2:30 - 3:45</td>
+    <td class=hang>Govind Persad, &ldquo;Social Change and Status Quo Maintenance in Applied Ethics&rdquo;</td>
+</tr>
+<tr>
+    <td class=gap></td>
+    <td class=gap><span class=b>Comments</span>: Anne Barnhill</td>
+</tr>
+<tr>
+    <td>4:00 - 5:15</td>
+    <td class=hang>Daniel Wodak, &ldquo;Scales Over Our Eyes&rdquo;</td>
+</tr>
+<tr>
+    <td class=gap></td>
+    <td class=gap><span class=b>Comments</span>: Ralf Bader</td>
+</tr>
+<tr>
+    <td>5:30 - 6:45</td>
+    <td class=hang>Jessica Flanigan, &ldquo;Two Moral Points of View&rdquo;</td>
+</tr>
+<tr>
+    <td class=gap></td>
+    <td class=gap><span class=b>Comments</span>: Daniel Waxman</td>
+</tr>
+<tr>
+    <td class=gap>7:30 - ?</td>
+    <td class=gap><a target='_blank' href="http://www.dasethiopian.com/">Dinner</a> and Fun</td>
+</tr>
+<tr>
+    <td class="left b" colspan=2>Saturday 2/25, Room 370</td>
+</tr>
+<tr>
+    <td class=gap>9:30 - 10:15</td>
+    <td class=gap>Breakfast</td>
+</tr>
+<tr>
+    <td>10:15 - 11:30</td>
+    <td class=hang>Mark Fedyk, &ldquo;Beyond Sidgwick’s Paradigm: A Pluralist’s Method for Moral Philosophy&rdquo;</td>
+</tr>
+<tr>
+    <td class=gap></td>
+    <td class=gap><span class=b>Comments</span>: Jason Brennan</td>
+</tr>
+<tr>
+    <td>11:45 - 1:00</td>
+    <td class=hang>Sarah McGrath, &ldquo;Philosophical Methodology and Levels of Generality&rdquo;</td>
+</tr>
+<tr>
+    <td class=gap></td>
+    <td class=gap><span class=b>Comments</span>: Amelia Hicks</td>
+</tr>
+<tr>
+    <td class=gap>1:00 - 2:30</td>
+    <td class=gap>Lunch</td>
+</tr>
+<tr>
+    <td>2:30 - 3:45</td>
+    <td class=hang>Mark Budolfson, &ldquo;Epistemological, Empirical, and Ethical Critiques of Global Ethics and Effective Altruism&rdquo;</td>
+</tr>
+<tr>
+    <td class=gap></td>
+    <td class=gap><span class=b>Comments</span>: Sarah Conly</td>
+</tr>
+<tr>
+    <td>4:00 - 5:15</td>
+    <td class=hang>Alison M. Jaggar, &ldquo;Moral Intuitionism and Moral Justification&rdquo;</td>
+</tr>
+<tr>
+    <td class=gap></td>
+    <td class=gap><span class=b>Comments</span>: Karen Jones</td>
+</tr>
+<tr>
+    <td>5:30 - 6:45</td>
+    <td class=hang>Theresa W. Tobin, &ldquo;Hubris and Humility in the Practice of Moral Epistemology&rdquo;</td>
+</tr>
+<tr>
+    <td class=gap></td>
+    <td class=gap><span class=b>Comments</span>: Sahar Akhtar</td>
+</tr>
+<tr>
+    <td class=gap>7:30 - ?</td>
+    <td class=gap><a target='_blank' href="http://thipkhao.com">Dinner</a> and Fun</td>
+</tr>
+<tr>
+    <td class="left b" colspan=2>Sunday 2/26, Room 415</td>
+</tr>
+<tr>
+    <td class=gap>9:30 - 10:15</td>
+    <td class=gap>Breakfast</td>
+</tr>
+<tr>
+    <td>10:15 - 11:30</td>
+    <td class=hang>Patricia Marino, &ldquo;Value Pluralism, Challenges to Consequentialism, and the Law and Economics Movement&rdquo;</td>
+</tr>
+<tr>
+    <td class=gap></td>
+    <td class=gap><span class=b>Comments</span>: Molly Gardner</td>
+</tr>
+<tr>
+    <td>11:45 - 1:00</td>
+    <td class=hang>Dan Layman, &ldquo;Though the Heavens May Fall? Pluralism, Judgment, and Democracy in Public Applied Ethics&rdquo;</td>
+</tr>
+<tr>
+    <td class=gap></td>
+    <td class=gap><span class=b>Comments</span>: David Boonin</td>
+</tr>
+<tr>
+    <td class=gap>1:00 - 1:15</td>
+    <td class=gap>Closing Remarks: David Faraci &amp; Peter Jaworski</td>
+</tr>
+<tr>
+    <td>1:45 - ?</td>
+    <td><a target='_blank' href="http://smokeandbarreldc.com/">Brunch</a> and People Leaving :(</td>
+</tr>
+</table>
+</div>
+
+
+
+<div id=abstracts class="j letter tab">
+<span class=u>Jump to:</span>
+<ul>
+    <li><a class=black href="#budolfson">Budolfson, &ldquo;Epistemological, Empirical, and Ethical Critiques of Global Ethics and Effective Altruism&rdquo;</a>
+    <li><a class=black href="#fedyk">Fedyk, &ldquo;Beyond Sidgwick’s Paradigm: A Pluralist’s Method for Moral Philosophy&rdquo;</a>
+    <li><a class=black href="#flanigan">Flanigan, &ldquo;Two Moral Points of View&rdquo;</a>
+    <li><a class=black href="#jaggar">Jaggar, &ldquo;Moral Intuitionism and Moral Justification&rdquo;</a>
+    <li><a class=black href="#layman">Layman, &ldquo;Though the Heavens May Fall? Pluralism, Judgment, and Democracy in Public Applied Ethics&rdquo;</a>
+    <li><a class=black href="#marino">Marino, &ldquo;Value Pluralism, Challenges to Consequentialism, and the Law and Economics Movement&rdquo;</a>
+    <li><a class=black href="#mcgrath">McGrath, &ldquo;Philosophical Methodology and Levels of Generality&rdquo;</a>
+    <li><a class=black href="#persad">Persad, &ldquo;Social Change and Status Quo Maintenance in Applied Ethics&rdquo;</a>
+    <li><a class=black href="#tobin">Tobin, &ldquo;Hubris and Humility in the Practice of Moral Epistemology&rdquo;</a>
+    <li><a class=black href="#wodak">Wodak, &ldquo;Scales Over Our Eyes&rdquo;</a>
+</ul>
+</p>
+
+<br>
+
+<a name=budolfson></a>
+<p class=b>Epistemological, Empirical, and Ethical Critiques of Global Ethics and Effective Altruism</p>
+<p>Mark Budolfson and Dean Spears<br>
+University of Vermont and the University of Texas at Austin</p>
+<p class=gapless>Many global ethics papers take a particular kind of evidence to be a decisive reason for concluding that aid interventions would do good on balance. For example, many papers cite randomized controlled trials as sufficient grounds for concluding that a particular intervention does good on balance, and many papers cite facts about the average amount of good done by a charity per dollar of donations as sufficient grounds for concluding that your donation to that charity would do good on balance. We catalog a number of different types of publicly available evidence that defeat these inferences, in the sense that the conclusions of these global ethics papers are typically not epistemically justified given the totality of publicly available evidence, which includes these defeaters. We focus on two kinds of publicly available evidence that constitute the most pervasive defeaters to arguments in global ethics. First, Nancy Cartwright and Angus Deaton have identified a number of reasons why randomized controlled trials don't support the conclusions about the efficacy of interventions that many applied ethicists assume they do. Second, even if we bracket that kind of objection and assume for the sake of argument that particular interventions are just as effective as claimed by proponents, there are still typically reasons to believe that attempts by single individuals to contribute to these interventions &ndash; for example, by giving donations to charities &ndash; will generally make outcomes worse rather than better. As a novel illustration of these two kinds of defeaters, and as a contribution to explaining the fundamental source of these defeaters and their pervasiveness, we identify a number of recurring principal agent problems and other perverse incentives that predict that these defeaters will very often apply. For example, the incentives involved in the design, execution, and reporting of results from RCTs predicts that the results of these studies will often be biased, or even known to be misleading in a way that exacerbates the general problem of [external validity etc. in Cartwright and Deaton's critique]. Similarly, the incentives involved in the design, execution, and reporting of results from aid interventions more generally will also often exhibit similar biases &ndash; and more importantly for the second type of defeater, they will often incentivize action by agents that ensures that attempts by single individuals to contribute to the intervention will make the outcome worse than it would have been without their attempt to contribute. Finally, with that critique of the epistemology of much of global ethics in hand, we turn to the ethics of global ethics, and attempt to more fully articulate Deaton's distinctively ethical objections to global ethics. One challenge for articulating Deaton's ethical objections is to understand why they do not overgeneralize into objections to all global trade and global investment.</p>
+<p class=totop><a target="_self" href="#top">Back to top</a></p>
+
+<br>
+
+<a name=fedyk></a>
+<p class=b>Beyond Sidgwick’s Paradigm: A Pluralist’s Method for Moral Philosophy</p>
+
+<p>Mark Fedyk<br>
+Mount Allison University</p>
+
+<p>Sidgwick’s <span class=i>The Methods of Ethics</span> is (in exactly Kuhn’s sense of the word) an exemplar for Anglo-American moral philosophy. It laid out the questions that moral philosophy should address, and much more importantly, demonstrated a method for addressing these questions that is still employed by a plurality, if not a majority, of contemporary moral philosophers. Sidgwick was also profoundly interested in both the natural and the social sciences, and his knowledge of developments in physics and biology almost certainly influenced his view that moral philosophy should aim to develop a single, unified, and comprehensive&mdash;in short: <span class=i>systematic</span>&mdash;moral theory.</p>
+
+<p>But times have changed. It is no longer reasonable to think that the physical, biological, and perhaps also behavioural sciences can achieve systematic knowledge of the departments of nature that are their respective subjects. Bill Wimsatt put the idea this way over 40 years ago: &ldquo;In biology and the social sciences, there is an obvious plurality of large, small, and middle range theories and models, which overlap in unclear ways and which usually partially supplement and partially contradict one another in explaining the interaction of phenomena at a number of levels of description and organization.&rdquo; Out of this we should not expect a systematic theory to emerge, simply because conjoining the first-order theories into a larger second-order theory would force us to delete crucial elements of the first-order theories, and that would fatally impair the inductive and explanatory usefulness of the second-order theory. Theoretical comprehensiveness comes at a cost of empirical tractability, thus; and so we must become comfortable with the philosophical ideas that nature is often too complex to be comprehended by systematic scientific theories, and that expertise in science consists, instead, of knowing how to move between theories (models, frameworks, formalisms, etc.) that are only ever locally applicable.</p>
+
+<p class=gapless>I will argue that moral philosophy must move past the Sidgwickian goal of systematicity&mdash;and with that, abandon some of the Sidgwickian methods&mdash;for similar reasons. The most important premise of my argument is that the normative behaviour of humans is too complex to be either described or (much more importantly) guided by a single comprehensive normative theory, and I will argue that similar methodological lessons as those noted above follow for the practice of moral philosophy.</p>
+<p class=totop><a target="_self" href="#top">Back to top</a></p>
+
+<br>
+
+<a name=flanigan></a>
+<p class=b>Two Moral Points of View</p>
+
+<p>Jessica Flanigan<br>
+University of Richmond</p>
+
+<p class=gapless>We disagree about what we morally ought to do. I propose that instead of asking what people morally ought to do, we might do better by focusing on two functions that judgments about what people morally ought to do typically serve. I make the case for this approach in four parts. First, I suggest that cases of moral disagreement sometimes amount to disagreements about the function of the concept ‘morally ought’ or partly verbal disputes about the concept (Godfrey-Smith 2012; Chalmers 2011). Second, I argue against assigning a single functional role to the concept &ldquo;morally ought&rdquo; (Dreier 2004). Instead, ‘morally ought’ could refer to whether a person did what she had most moral reason to do, which informs practices of praise and criticism. Or, ‘morally ought’ could refer to whether a person was morally required to act, which informs practices of sanction, blame (maybe), interference, defensive force, and punishment. I make the case for this approach partly on the grounds that it explains how some acts can be supererogatory while moral reasons are also morally overriding (Portmore 2008). Third, I discuss acts of Samaratanism in order to illustrate how distinguishing moral reasons from requirements can help us make progress in applied ethics. Fourth, I discuss the more general implications of this approach for questions about what people morally and rationally ought to do, citing familiar debates in applied ethics as examples.</p>
+<p class=totop><a target="_self" href="#top">Back to top</a></p>
+
+<br>
+
+<a name=jaggar></a>
+<p class=b>Moral Intuitionism and Moral Justification</p>
+
+<p>Alison M. Jaggar and Theresa W. Tobin<br>
+University of Colorado, Boulder and Marquette University</p>
+
+<p class=gapless>This presentation draws from an early chapter in a book that Theresa Tobin and I are co-authoring. The book is tentatively titled, <span class=i>Un-disciplining Moral Philosophy: Moral Justification in an Unjust World.</span> It explores how people may reason together about disputes arising among communities that are unequally situated and/or whose members utilize very different cultural or religious resources. Western philosophers have proposed a variety of models of reasoning for justifying moral claims and addressing disputes equitably. In the first part of our book, Tobin and I examine several of these models and argue that they are infused with unacknowledged cultural assumptions and biases. Although the models may work well in some contexts, they work less well in situations where the disputants are unequal and culturally diverse. In contexts of diversity and inequality, those who are more powerful are often able to use the models to rationalize proposals that favor their own cultural orientations and interests. Today&rsquo;s presentation illustrates some of these problems with reference to the methodological approach of intuitionism.</p>
+<p class=totop><a target="_self" href="#top">Back to top</a></p>
+
+<br>
+
+<a name=layman></a>
+<p class=b>Though the Heavens May Fall? Pluralism, Judgment, and Democracy in Public Applied Ethics</p>
+
+<p>Dan Layman<br>
+Davidson College</p>
+
+<p class=gapless>One of the primary aspirations of applied ethics is to guide public policy. But this aspiration seems to face a dilemma. On the one hand, applied ethics might abstract away from empirical contingencies in order to offer deontic guidance from above, as it were. Trouble is, nearly all questions of public policy seem to be too dependent on such contingencies for armchair deontic theorizing to get very far. On the other hand, we could dispense with deontic theorizing entirely in favor of a severely data-driven, number crunching approach to social problems. But unless we adopt some rather reductive version of consequentialism, we will inevitably find ourselves grasping for deontic guidance in the face of myriad competing tradeoffs and alternatives. In other words, it seems like we badly need deontic moral reasoning to play a guiding role in public policy, but it isn’t clear how it <span class=i>can</span> play that role without running up against questions it is ill-equipped to answer. I argue that we should resolve this dilemma by treating the role of deontic reasoning in public policy debate as one of falsification; hypotheses about just public policy cannot be <span class=i>confirmed</span> by purely deontic considerations, but they can be <span class=i>ruled out</span> by purely deontic considerations. The ethicist’s role in normative public policy is to determine which options are off the planning table rather than to establish which alternatives on the planning table are the right ones.</p>
+<p class=totop><a target="_self" href="#top">Back to top</a></p>
+
+<br>
+
+<a name=marino></a>
+<p class=b>Value Pluralism, Challenges to Consequentialism, and the Law and Economics Movement</p>
+
+<p>Patricia Marino<br>
+University of Waterloo</p>
+
+<p>This paper considers how issues concerning value pluralism and challenges to consequentialism bear on legal reasoning, with particular attention to the &ldquo;law and economics&rdquo; movement. In the &ldquo;law and economics&rdquo; movement, economic reasoning is used not only descriptively, to explain and predict the effects of particular laws, but also normatively, to recommend laws based on their consequences. As in consequentialist ethical theories like utilitarianism, economic approaches to the law involve aiming at some form of &ldquo;efficiency&rdquo; &ndash; that is, we try to maximize well-being or goodness in one way or another.</p>
+
+<p>In one sense, value pluralism would seem to pose an obvious challenge to the use of economics in legal reasoning, since consequentialism is typically seen as unable to accommodate a range of values. But matters here are complex. For one thing, the nature of value pluralism and the extent to which it is incompatible with single-principle and consequentialist theories are contested. Also, insofar as the pursuit of efficiency is understood to clash with value pluralism, it is sometimes argued that it is value pluralism that must give way, because consequentialism has a rational justification that deontological alternatives lack.</p>
+
+<p class=gapless>In this paper, I draw on my previous research on value pluralism and moral reasoning to develop a more nuanced discussion of these issues, and I consider how they bear on recent arguments concerning the use of efficiency in policy, such as those arising in debates over Eyal Zamir and Barak Medina's (2010) <span class=i>Law, Economics, and Morality</span> and Louis Kaplow and Steven Shavell's (2002) <span class=i>Fairness Versus Welfare.</span></p>
+<p class=totop><a target="_self" href="#top">Back to top</a></p>
+
+<br>
+
+<a name=mcgrath></a>
+<p class=b>Philosophical Methodology and Levels of Generality</p>
+
+<p>Sarah McGrath<br>
+Princeton University</p>
+
+<p class=gapless>Suppose that you are engaged in ethical theorizing, attempting to determine which claims you should accept and which you should reject. Any claim that you consider will have a certain level of generality: for example, it might be a claim about a general principle, or about a relatively determinate case type, or even a claim about the status of a token particular. In this talk, I explore the issue of how (if at all) we should take into account levels of generality when doing ethical theorizing.</p>
+<p class=totop><a target="_self" href="#top">Back to top</a></p>
+
+<br>
+
+<a name=persad></a>
+<p class=b>Social Change and Status Quo Maintenance in Applied Ethics</p>
+
+<p>Govind Persad<br>
+Johns Hopkins University</p>
+
+<p class=gapless>Much work in applied ethics responds to technological developments&mdash;such as climate change, artificial intelligence, or genetic modification of organisms&mdash;that promise to change our way of life. Other work, for example in animal rights and population ethics, frequently buttresses advocacy for social movements that would also produce change. The centrality of social change to problems in applied ethics indicates the importance of addressing resistance to change, particularly when such resistance is not justified on the basis of some other value but regarded as a value in itself. Comparatively little attention has been paid to resistance to change, with a notable exception being Nick Bostrom and Toby Ord’s identification of the role played by &ldquo;status quo bias&rdquo; in ethics and their suggestion that this bias can be addressed by use of a &ldquo;reversal test&rdquo; in which the status quo is imagined as a novel intervention. In this project, I identify how a desire for maintenance of the status quo in the face of change plays a role in debates in applied ethics. I plan to discuss a few case examples&mdash;likely climate change, artificial intelligence, and animal rights. I then examine arguments for giving weight to status quo maintenance, and makes the case that although it is more than the mere psychological bias Bostrom and Ord describe it as, it is a less compelling interest than those identified by those calling for revisions in our social practices. It then makes some more speculative suggestions about how applied ethics might make progress in the face of the psychological and political attractiveness of maintaining the status quo.</p>
+<p class=totop><a target="_self" href="#top">Back to top</a></p>
+
+<br>
+
+<a name=tobin></a>
+<p class=b>Hubris and Humility in the Practice of Moral Epistemology</p>
+
+<p>Theresa W. Tobin and Alison M. Jaggar<br>
+Marquette University and the University of Colorado, Boulder</p>
+
+<p>This paper is taken from a work-in-progress chapter of a co-authored book, with Professor Alison Jaggar. The book examines philosophers’ proposals for methods of moral justification capable of rationally resolving moral disputes that arise in contexts characterized by cultural diversity and social inequality. We defend the need for humility as an intellectual virtue for the practice of moral epistemology. We advocate humility at three distinct but interrelated levels: (1) humility in the aims and methods of moral epistemology, and so as a methodological virtue; (2) humility as a virtue in the intellectual character of the individual philosopher; and (3) humility as a structural virtue in the &ldquo;character&rdquo; of the discipline.</p>
+
+<p><span class=i>Humility as a methodological virtue</span>: Our larger project argues that there is likely a plurality of good methods of moral justification and that any method’s usefulness will be context dependent. If this is correct, then we need more humble ways of doing moral epistemology that incorporate our epistemic dependence on scholars from other disciplines who have knowledge that illuminates the social, cultural and historical contexts in which occasions for moral justification arise, and on ordinary people whose lived experience often gives them access to relevant reasons or insights that philosophers do not (and perhaps cannot directly) have. Rejecting philosophy’s pretensions to be the sole arbiter of moral reason, we propose instead that philosophers investigate case studies of moral reasoning in real world situations characterized by diversity and inequality, seeking regularities that suggest normative guidelines about reasoning practices appropriate for different contexts. This method takes seriously diverse practices of moral reasoning, including those used in cultures that are pre-modern, religious and hierarchical. It calls for teamwork in collaboration with other philosophers, with scholars in other disciplines, and in respectful dialogue with moral agents from all walks of life.</p>
+
+<p><span class=i>Humility as a virtue for the individual philosopher</span>: More humble methods are insufficient for improving philosophy’s contributions to the study of moral justification for a diverse and unequal world. We argue that individual philosophers engaged this this work should also cultivate intellectual humility. Intellectual humility is central among a cluster of related virtues, which include intercultural respect, open-mindedness, and the sensitivity to epistemic power imbalances that enables philosophers to recognize testimonial injustices in situations where people disagree about what count as good moral reasons. These virtues are crucial for illuminating moral justification in situations of diversity and inequality, which we take to be the rule rather than the exception.</p>
+
+<p class=gapless><span class=i>Humility as a structural virtue</span>: Individual intellectual vices, such as dogmatism, ethnocentrism, and insensitivity to privilege, are nourished by a tradition in which the same vices are deeply embedded. Our concerns about intellectual humility include but go beyond individual psychology and disciplinary narrowness. Because certain cognitive biases track social identity, the systematic blind-spots identified in moral reasoning done by philosophers may be reinforced by the relative demographic homogeneity of moral philosophers. If this is so, then integrating intellectual humility into moral epistemology requires more than self-awareness and philosophical argumentation. It also requires institutional reforms such as diversifying philosophy faculty and rethinking disciplinary boundaries.</p>
+<p class=totop><a target="_self" href="#top">Back to top</a></p>
+
+<br>
+
+<a name=wodak></a>
+<p class=b>Scales Over Our Eyes</p>
+
+<p>Daniel Wodak<br>
+Virginia Tech</p>
+
+<p>Philosophical claims in applied ethics are frequently supported by appeals to psychological data that purports to measure happiness, or at least putative components thereof. Many prominent psychologists encourage this; Daniel Kahneman, for instance, made bold claims about what we can infer from such data in his influential papers &ldquo;Objective Happiness&rdquo; and &ldquo;Back to Bentham.&rdquo;</p>
+
+<p>My central contention is that most appeals to such psychological data are methodologically problematic. Using Kahneman as my main target, I support this with four points. The first is unoriginal, but frequently neglected: we do not know how to aggregate the relevant psychological data. This is because we lack crucial information about the relevant scales, such as whether the their intervals are like those on the Celsius or Richter scale.</p>
+
+<p>Second, the relevant psychological data can be used to support philosophically interesting claims only if we know how to aggregate the data. I show that various claims about well-being and rationality, including Kahneman's evidence for &ldquo;peak-end bias,&rdquo; depend upon unsupported assumptions about the intervals of the relevant scales.</p>
+
+<p>Third, we lack a clear means of gaining the requisite information about the relevant scales. Here I consider Kahneman's proposal that &ldquo;a consistent rescaling is possible, yielding a ratio scale for instant utility that is calibrated by its relation to duration.&rdquo; I argue that this fails for many reasons, including Kahneman's prior work on &ldquo;duration neglect.&rdquo;</p>
+
+<p class=gapless>Finally, I contend that many of these methodological problems with appeals to actual wellbeing measurements carry over to appeals to hypothetical wellbeing measurements, which play a crucial role in various philosophical debates (for instance, over prioritarianism).</p>
+<p class=totop><a target="_self" href="#top">Back to top</a></p>
+</div>
+
+
+
+<div id=info class="letter tab">
+<p class="gapless b">Location</p>
+<ul class=info>
+    <li>All sessions in the <a target='_blank' href="https://guevents.georgetown.edu/rafik_b_hariri_building#.WKTA5jsrJeU">Rafik B. Hariri Building</a>
+    <li>Friday sessions in rooms 240 and 415 (after 4:00)
+    <li>Saturday sessions in room 370
+    <li>Sunday sessions in room 415
+</ul>
+
+<p class="gapless b">Accommodation</p>
+<ul class=info>
+    <li>Rooms have been reserved at the <a target='_blank' href="http://www.acc-guhotelandconferencecenter.com/">Georgetown University Hotel and Conference Center</a>. <li>Here is a <a target="_blank" href="https://goo.gl/maps/RvfVj3aV4hq">Google Map</a>. As you can see, the hotel is <span class=i>very</span> close to the workshop location, just a short walk across a courtyard.
+</ul>
+
+<p class="gapless b">Sustenance</p>
+<ul class=info>
+    <li>Friday Dinner at <a target='_blank' href="http://www.dasethiopian.com/">Das Ethiopian</a>
+    <li>Saturday Dinner at <a target='_blank' href="http://thipkhao.com">Thip Khao</a> (Laotian)
+    <li>Sunday Brunch at <a target='_blank' href="http://smokeandbarreldc.com/">Smoke &amp; Barrel</a> (Vegan-friendly BBQ)
+    <li>Provided on site:
+        <ul>
+            <li>Friday afternoon snack
+            <li>Saturday breakfast
+            <li>Saturday lunch
+            <li>Saturday coffee break
+            <li>Sunday breakfast
+        </ul>
+</ul>
+</div>
+
+</div>
+</body>
+</html>
