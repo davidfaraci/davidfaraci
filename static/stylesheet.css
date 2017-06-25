@@ -46,6 +46,7 @@ a:active { color: #FF0000; text-decoration: none }
 
 #titlebar {
     width: 100%;
+    height: 138;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,21 +62,21 @@ a:active { color: #FF0000; text-decoration: none }
 }
 
 .df { font-size: 2.5em; }
+.sym { font-size: 1em; }
 
 .buttontable {
     margin: 0 auto;
     padding: 0;
-    border: 1;
     table-layout: fixed;
     text-align: center;
 }
 
-button {
-    background-color: #D8D8D8;
+.menu {
+    background-color: transparent;
     height: 10px;
     border: none;
     color: #000000;
-    padding: 15 40 40 40;
+    padding: 15 40 22 40;
     text-align: center;
     font-variant: small-caps;
     text-decoration: none;
@@ -87,26 +88,33 @@ button {
 button:focus { outline:0; }
 
 
-
-#cvdl {
-    font-family: arial;
-    display: none;
-    position: fixed;
-    top: 150;
-    left: 252;
-    width: 111px;
-    border: none;
-    padding: 10 0 0 0;
+.dl {
     text-align: center;
-    font-size: .9em;
+    display: none;
+    border: none;
+    vertical-align: top;
 }
 
+.dlsp {
+    text-align: center;
+    border: none;
+    vertical-align: top;
+}
+
+.dlb {
+    background-color: transparent;
+    border: none;
+    padding: 0 0 0 0;
+    font-size: .8em;
+    font-variant: normal;
+    cursor: pointer;
+}
 
 
 #sheet {
     text-align: left;
     position: relative;
-    top: 30;
+    top: 46;
     overflow-y: auto;
     background-color: #FFFFFF;
     border-width: 1px 1px 1px 1px;
@@ -141,6 +149,7 @@ button:focus { outline:0; }
 .indentmid { padding-left: .75em; padding-bottom: 10px; }
 .indentend { padding-left: .75em; padding-bottom: 28px; }
 .dindent { padding-left: 1.5em }
+.dindentmid { padding-left: 1.5em; padding-bottom: 10px; }
 
 table.teach {
     padding-bottom: 28px;

@@ -19,7 +19,9 @@
 <script>
 function underline(cid) {
     document.getElementById(cid).style.textDecoration = 'underline';
-    if(cid == '2') { $( '#cvdl' ).fadeIn(600); }
+    if(cid == '2') { $( '#22' ).fadeIn(); }
+    if(cid == '4') { $( '#44' ).fadeIn(); }
+    if(cid == '6') { $( '#66' ).fadeIn(); }
 }
 </script>
 
@@ -52,23 +54,23 @@ $(function() {
     </div>
 {% else %}
     <div id=titlebar>
-        <p class='df cv'><a target='_self' href="/">David Faraci</a></p>
+            <p class='df cv'><a target='_self' href="/"><span class=sym>&#9596;</span>&nbsp;&nbsp;David Faraci&nbsp;&nbsp;<span class=sym>&#9598;</sym></a></p>
         <table class=buttontable>
         <tr>
-            <td><button id=1 onclick="window.location='/';"><p class='unselected'>Home</p></button></td>
-            <td><button id=2 onclick="window.location='/cv';"><p class='unselected'>CV</p></button></td>
-            <td><button id=3 onclick="window.location='/publications';"><p class='unselected'>Publications</p></button></td>
-            <td><button id=4 onclick="window.location='/wip';"><p class='unselected'>In Progress</p></button></td>
-            <td><button id=5 onclick="window.location='/opentower';"><p class='unselected'>Open Tower</p></button></td>
-            <td><button id=6 onclick="window.location='/teaching';"><p class='unselected'>Teaching</p></button></td>
-            <td><button id=7 onclick="window.location='/misc';"><p class='unselected'>Miscellany</p></button></td>
+            <td><button id=1 class=menu onclick="window.location='/';"><p class='unselected'>Home</p></button><br>&nbsp;</td>
+            <td><button id=2 class=menu onclick="window.location='/cv';"><p class='unselected'>CV</p></button>
+                <br><span id=22 class=dl>&nbsp;<button class=dlb onclick="window.open('cv.pdf');">Download PDF</button></span><span=dlsp>&nbsp;</span></td>
+            <td><button id=3 class=menu onclick="window.location='/publications';"><p class='unselected'>Publications</p></button><br>&nbsp;</td>
+            <td><button id=4 class=menu onclick="window.location='/wip';"><p class='unselected'>In Progress</p></button>
+                <br><span id=44 class=dl>&nbsp;<button class=dlb onclick="window.open('research.pdf');">Research Statement</button></span><span=dlsp>&nbsp;</span></td>
+            <td><button id=5 class=menu onclick="window.location='/opentower';"><p class='unselected'>Open Tower</p></button><br>&nbsp;</td>
+            <td><button id=6 class=menu onclick="window.location='/teaching';"><p class='unselected'>Teaching</p></button>
+                <br><span id=66 class=dl>&nbsp;<button class=dlb onclick="window.open('teaching/portfolio.pdf');">Teaching Portfolio</button></span><span=dlsp>&nbsp;</span></td>
+            <td><button id=7 class=menu onclick="window.location='/misc';"><p class='unselected'>Miscellany</p></button><br>&nbsp;</td>
         </tr>
         </table>
     </div>
 
-    <div id=cvdl>
-        <a href="cv.pdf">Download PDF</a>
-    </div>
 {% endif %}
 
 
@@ -78,7 +80,7 @@ $(function() {
 {% endblock %}
 <br><br><br>
 <div class=foot>
-<a href="mailto:david.faraci@georgetown.edu">david.faraci@georgetown.edu</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;June 24, 2017
+<a href="mailto:david.faraci@georgetown.edu">david.faraci@georgetown.edu</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;June 25, 2017
 </div>
 
 

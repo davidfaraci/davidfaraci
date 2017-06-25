@@ -1,6 +1,6 @@
 {% extends "index.html" %}
 {% block contents %}
-<script>underline(2)</script>
+<script>underline(2);</script>
 
 {% if request.MOBILE %}
     <div class=cvdlm><a href="cv.pdf">Download PDF</a></div>
@@ -133,9 +133,9 @@
 
 <p class=it>Tech Development</p>
 <p class=indent>Co-founder (with Graham Leach-Krouse): Open Tower (<a href="https://open-tower.com">https://open-tower.com</a>)</p>
-<p class=indent>Founder, manager, co-developer (with GLK): MARGY (<a href="https://margymail.com">https://margymail.com</a>)</p>
-<p class=indent>Founder, co-developer (with GLK): Populus (<a href="https://populusjournal.com">https://populusjournal.com</a>)</p>
-<p class=indentmid>Founder, developer, manager: Philosophical Trajectories (<a href="http://personal.bgsu.edu/~faracid/pt")>http://personal.bgsu.edu/~faracid/pt</a>)</p>
+<p class=dindent>Founder, manager, co-developer: MARGY (<a href="https://margymail.com">https://margymail.com</a>)</p>
+<p class=dindent>Founder, manager, co-developer: Populus (<a href="https://populusjournal.com">https://populusjournal.com</a>)</p>
+<p class=dindentmid>Founder, manager, developer: Philosophical Trajectories (<a href="http://personal.bgsu.edu/~faracid/pt")>http://personal.bgsu.edu/~faracid/pt</a>)</p>
 
 <p class=it>Event Development</p>
 <p class=indent>Co-organizer (with Peter Jaworski): <a href="https://davidfaraci.com/workshop">Workshop on Methodology in Applied Ethics</a>, Georgetown Institute for the Study of Markets and Ethics, February 24-26, 2017</p>
@@ -174,25 +174,45 @@
 <a name="teacher"></a>
 <p class=scaps>Teaching Experience</p>
 
-<table class="teach">
-<tr><td>Metaethics</td><td>Graduate (500)</td><td>Virginia Tech</td></tr>
-<tr><td>Ethical Theory</td><td>Advanced (300)</td><td>Virginia Tech</td></tr>
-<tr><td>Computers and Philosophy</td><td>Advanced (300)</td><td>BGSU</td></tr>
-<tr><td>&nbsp;&nbsp;&nbsp;as Philosophy of Information Technology</td><td></td><td>Virginia Tech</td></tr>
-<tr><td>Bioethics</td><td>Moderate (200)</td><td>Chapel Hill</td></tr>
-<tr><td>&nbsp;&nbsp;&nbsp;as Biomedical Ethics</td><td></td><td>Virginia Tech</td></tr>
-<tr><td>Business Ethics</td><td>Moderate (200)</td><td>BGSU</td></tr>
-<tr><td>&nbsp;&nbsp;&nbsp;as Social Responsibilities of Business</td><td></td><td>Georgetown</td></tr>
-<tr><td>Philosophy of Death and Dying</td><td>Moderate (200)</td><td>BGSU</td></tr>
-<tr><td>Introduction to Ethics</td><td>Introductory (100)</td><td>BGSU</td></tr>
-<tr><td>Introduction to Logic</td><td>Introductory (100)</td><td>BGSU</td></tr>
-<tr><td>Introduction to Philosophy</td><td>Introductory (100)</td><td>BGSU</td></tr>
-<tr><td>Practical Ethics</td><td>Introductory (100)</td><td>Chapel Hill</td></tr>
-<tr><td>Social Ethics and Political Thought</td><td>Introductory (100)</td><td>Chapel Hill</td></tr>
-<tr><td>Introduction to Philosophy</td><td>Online</td><td>BGSU</td></tr>
-<tr><td>Introduction to Symbolic Logic</td><td>Online</td><td>Chapel Hill</td></tr>
-<tr><td>Philosophy of Death and Dying</td><td>Online</td><td>BGSU</td></tr>
+{%if request.MOBILE %}
+    <p class=indent>Metaethics, Graduate (500), Virginia Tech</p>
+    <p class=indent>Ethical Theory, Advanced (300), Virginia Tech</p>
+    <p class=indent>Computers and Philosophy, Advanced (300), BGSU</p>
+    <p class=dindent>as Philosophy of Information Technology, Virginia Tech</p>
+    <p class=indent>Bioethics, Moderate (200), Chapel Hill</p>
+    <p class=dindent>as Biomedical Ethics, Virginia Tech</p>
+    <p class=indent>Business Ethics, Moderate (200), BGSU</p>
+    <p class=dindent>as Social Responsibilities of Business, Georgetown</p>
+    <p class=indent>Philosophy of Death and Dying, Moderate (200), BGSU</p>
+    <p class=indent>Introduction to Ethics, Introductory (100), BGSU</p>
+    <p class=indent>Introduction to Logic, Introductory (100), BGSU</p>
+    <p class=indent>Introduction to Philosophy, Introductory (100), BGSU</p>
+    <p class=indent>Practical Ethics, Introductory (100), Chapel Hill</p>
+    <p class=indent>Social Ethics and Political Thought, Introductory (100), Chapel Hill</p>
+    <p class=indent>Introduction to Philosophy, Online, BGSU</p>
+    <p class=indent>Introduction to Symbolic Logic, Online, Chapel Hill</p>
+    <p class=indentend>Philosophy of Death and Dying, Online, BGSU</p>
+{% else %}
+    <table class="teach">
+    <tr><td>Metaethics</td><td>Graduate (500)</td><td>Virginia Tech</td></tr>
+    <tr><td>Ethical Theory</td><td>Advanced (300)</td><td>Virginia Tech</td></tr>
+    <tr><td>Computers and Philosophy</td><td>Advanced (300)</td><td>BGSU</td></tr>
+    <tr><td>&nbsp;&nbsp;&nbsp;as Philosophy of Information Technology</td><td></td><td>Virginia Tech</td></tr>
+    <tr><td>Bioethics</td><td>Moderate (200)</td><td>Chapel Hill</td></tr>
+    <tr><td>&nbsp;&nbsp;&nbsp;as Biomedical Ethics</td><td></td><td>Virginia Tech</td></tr>
+    <tr><td>Business Ethics</td><td>Moderate (200)</td><td>BGSU</td></tr>
+    <tr><td>&nbsp;&nbsp;&nbsp;as Social Responsibilities of Business</td><td></td><td>Georgetown</td></tr>
+    <tr><td>Philosophy of Death and Dying</td><td>Moderate (200)</td><td>BGSU</td></tr>
+    <tr><td>Introduction to Ethics</td><td>Introductory (100)</td><td>BGSU</td></tr>
+    <tr><td>Introduction to Logic</td><td>Introductory (100)</td><td>BGSU</td></tr>
+    <tr><td>Introduction to Philosophy</td><td>Introductory (100)</td><td>BGSU</td></tr>
+    <tr><td>Practical Ethics</td><td>Introductory (100)</td><td>Chapel Hill</td></tr>
+    <tr><td>Social Ethics and Political Thought</td><td>Introductory (100)</td><td>Chapel Hill</td></tr>
+    <tr><td>Introduction to Philosophy</td><td>Online</td><td>BGSU</td></tr>
+    <tr><td>Introduction to Symbolic Logic</td><td>Online</td><td>Chapel Hill</td></tr>
+    <tr><td>Philosophy of Death and Dying</td><td>Online</td><td>BGSU</td></tr>
 </table>
+{% endif %}
 
 <a name="references"></a>
 <p class=scaps>References</p>
