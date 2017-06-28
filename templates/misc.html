@@ -1,6 +1,9 @@
 {% extends "index.html" %}
 {% block contents %}
-<script>underline(7);</script>
+<script>underline(7); $(window).load(function() { footer(1) })</script>
+
+<div id=sheet>
+
 <div class=misc>
 <p class=scaps>Philosophy</p>
 <p class=misctitle><a href="dissoverview.pdf">Dissertation Overview</a></p>
@@ -26,5 +29,20 @@
 
 <p class=misctitle><a href="http://www.bgsu.edu/content/dam/BGSU/college-of-arts-and-sciences/philosophy/documents/Frey/Apr6-3.mp3">Tribute to R. G. Frey</a></p>
 <p class=indentend>An audio recording (MP3) of a tribute I offered at R. G. Frey's memorial service in April 2013. Ray was a philosopher at BGSU for 26 years; he passed away in 2012.</p>
+
+
+<p class=scaps>Site Credits</p>
+<p class=indentmid>Contents and design &copy; Copyright 2017 David Faraci</p>
+
+<p class=indent>Site powered by <a href="http://flask.pocoo.org/">Flask</a> &copy; 2015 Armin Ronacher and contributors</p>
+<p class=indent>Mobile &lsquo;hamburger&rsquo; menu adapted from <a href="https://codepen.io/g13nn/pen/eHGEF">CodePen</a></p>
+<p class=indentmid>Lots of code snippets due to the community at <a href="http://stackoverflow.com/">Stack Overflow</a></p>
+
+<p class=indent>Font <a href="http://www.dafont.com/linux-libertine.font">Linux Libertine Regular</a> by the <a href="http://www.linuxlibertine.org/">Libertine Open Fonts Projekt</a></p>
+<p class=indent>Open Tower logo adapted from font <span class=portfont><a href="http://www.dafont.com/portculliard.font">Portculliard Initials</a></span> by <a href="http://moorstation.org/typoasis/designers/lloyd/index.htm">Paul Lloyd</a></p>
+<p class=indentmid>Open Tower font <a href="http://www.dafont.com/streetvertising-public.font"><span class=ot>Streetvertising Public</span></a> by <a href="http://www.cleanvertising.nl/">Cleanvertising</a></p>
+
+<p class=indent>Main photo credit: <a href="http://gerardvong.weebly.com/">Gerard Vong</a></p>
+<p class=indent>Dog credits: Nala &amp; <a href="https://www.facebook.com/GomerHushpuppy/">Gomer Hushpuppy III</a></p>
 </div>
 {% endblock %}

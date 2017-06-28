@@ -1,6 +1,8 @@
 {% extends "index.html" %}
 {% block contents %}
-<script>underline(2);</script>
+<script>underline(2); $(window).load(function() { footer(1) })</script>
+
+<div id=sheet>
 
 {% if request.MOBILE %}
     <div class=cvdlm><a href="cv.pdf">Download PDF</a></div>
@@ -62,7 +64,7 @@
 <p class=indentmid>&ldquo;Good Selves, True Selves&rdquo; (with David Shoemaker), <span class=it>Philosophy and Phenomenological Research</span></p>
 
 <p class=it>Under Review</p>
-<p class=indentmid>&ldquo;<a href="ip/defeat.pdf">Knowledge, Necessity and Defeat</a>&rdquo;</span></p>
+<p class=indentmid>&ldquo;<a href="ip/defeat.pdf">Knowledge, Necessity and Defeat</a>&rdquo;</p>
 
 <p class=it>In Progress</p>
 <p class=indent>&ldquo;The Epistemological Impotence of Moral Perception&rdquo;</p>
@@ -119,9 +121,9 @@
 
 
 <p class=scaps>Awards, Fellowships, Grants</p>
-<p class=indent>Finalist, Marc Sanders Prize in Metaethics</a> (for Knowledge, Necessity and Defeat), 2016</p>
-<p class=indent>Finalist, Marc Sanders Prize in Metaethics (for &ldquo;On Leaving Room for Doubt: Using Frege-Geach to Illuminate Expressivism's Problem with Objectivity</span>), 2014</p>
-<p class=indent>Doctoral Research Fellow, Nanotechnology and Society Research Group</a>, Northeastern University, NSF Grant No. SES-0609078 (award: $10,000), 2011</p>
+<p class=indent>Finalist, Marc Sanders Prize in Metaethics (for &ldquo;Knowledge, Necessity and Defeat&rdquo;), 2016</p>
+<p class=indent>Finalist, Marc Sanders Prize in Metaethics (for &ldquo;On Leaving Room for Doubt: Using Frege-Geach to Illuminate Expressivism's Problem with Objectivity&rdquo;), 2014</p>
+<p class=indent>Doctoral Research Fellow, Nanotechnology and Society Research Group, Northeastern University, NSF Grant No. SES-0609078 (award: $10,000), 2011</p>
 <p class=indent>Experiment Month Participant, Yale University (sponsored by the American Philosophical Association), 2011</p>
 <p class=indent>University-Wide Graduate Student Teaching Award Nominee, 2011</p>
 <p class=indent>Social Philosophy and Policy Center Graduate Student Scholar, 2010</p>
@@ -135,7 +137,7 @@
 <p class=indent>Co-founder (with Graham Leach-Krouse): Open Tower (<a href="https://open-tower.com">https://open-tower.com</a>)</p>
 <p class=dindent>Founder, manager, co-developer: MARGY (<a href="https://margymail.com">https://margymail.com</a>)</p>
 <p class=dindent>Founder, manager, co-developer: Populus (<a href="https://populusjournal.com">https://populusjournal.com</a>)</p>
-<p class=dindentmid>Founder, manager, developer: Philosophical Trajectories (<a href="http://personal.bgsu.edu/~faracid/pt")>http://personal.bgsu.edu/~faracid/pt</a>)</p>
+<p class=dindentmid>Founder, manager, developer: Philosophical Trajectories (<a href="http://personal.bgsu.edu/~faracid/pt">http://personal.bgsu.edu/~faracid/pt</a>)</p>
 
 <p class=it>Event Development</p>
 <p class=indent>Co-organizer (with Peter Jaworski): <a href="https://davidfaraci.com/workshop">Workshop on Methodology in Applied Ethics</a>, Georgetown Institute for the Study of Markets and Ethics, February 24-26, 2017</p>
@@ -150,13 +152,12 @@
 <p class=indentend>Analytic Philosophy | Australasian Journal of Philosophy | Canadian Journal of Philosophy | Ethics | European Journal of Philosophy | Grazer Philosophische Studien | The International Journal of Feminist Approaches to Bioethics | Journal of the American Philosophical Association | Journal of Moral Philosophy | Mind | Philosophia | Philosophical Psychology | Philosophical Quarterly | Res Philosophica | Review of Philosophy and Psychology | Philosophical Studies | Social Theory and Practice | Southwest Philosophy Review | Synthese | Theoria | Topoi</p>
 
 
-<a name="service"></a>
 <p class=scaps>Department Service</p>
 
 <p class=it>UNC Chapel Hill</p>
-<p class=indent>Judge, National High School Ethics Bowl</a>, 2014-2015</p>
+<p class=indent>Judge, National High School Ethics Bowl, 2014-2015</p>
 <p class=indent>Judge, Willie P. Mangum Medal in Oratory, 2014</p>
-<p class=indent>Judge, North Carolina High School Ethics Bowl</a>, 2013</p>
+<p class=indent>Judge, North Carolina High School Ethics Bowl, 2013</p>
 <p class=indentmid>Session Leader, Ethics &amp; Leadership Conference, North Carolina School of Science and Mathematics, 2013</p>
 
 <p class=it>Virginia Tech</p>
@@ -171,7 +172,6 @@
 <p class=hangend>Graduate Representative to the Philosophy Department, 2007</p>
 
 
-<a name="teacher"></a>
 <p class=scaps>Teaching Experience</p>
 
 {%if request.MOBILE %}
@@ -214,7 +214,7 @@
 </table>
 {% endif %}
 
-<a name="references"></a>
+
 <p class=scaps>References</p>
 
 <span class=b><a href="http://www2.phil.cam.ac.uk/~swb24/">Simon Blackburn</a></span><br>
@@ -240,6 +240,5 @@
 
 <span class=b><a href="http://tulane.edu/liberal-arts/philosophy/shoemaker.cfm">David Shoemaker</a></span><br>
 <p class=indentmid>Professor of Philosophy; Murphy Institute Faculty Member, Tulane University</p>
-
 </div>
 {% endblock %}

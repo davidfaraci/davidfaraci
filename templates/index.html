@@ -1,12 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <title>David Faraci</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <link rel="canonical" href="https://davidfaraci.com">
 <meta property="og:title" content="David Faraci">
 <meta property="og:description" content="David Faraci's Website">
-<meta property="og:image" content="https://davidfaraci.com/favicon.png" />
-<meta property="og:url" content="https://davidfaraci.com" />
+<meta property="og:image" content="https://davidfaraci.com/favicon.png">
+<meta property="og:url" content="https://davidfaraci.com">
 <base target='_blank' />
 <link rel="icon" href="favicon.png">
 
@@ -22,6 +23,14 @@ function underline(cid) {
     if(cid == '2') { $( '#22' ).fadeIn(); }
     if(cid == '4') { $( '#44' ).fadeIn(); }
     if(cid == '6') { $( '#66' ).fadeIn(); }
+}
+</script>
+
+<script>
+function footer(cid) {
+    if(cid != '0') {
+        $( '#foot' ).show();
+    }
 }
 </script>
 
@@ -43,7 +52,7 @@ $(function() {
 
     <div class="menu">
     <ul>
-    <a id=1 target='_self' href="/"><li>HOME</li></a>
+    <a id=1 target='_self' href="/about"><li>ABOUT</li></a>
     <a id=2 target='_self' href="/cv"><li>CV</li></a>
     <a id=3 target='_self' href="/publications"><li>PUBLICATIONS</li></a>
     <a id=4 target='_self' href="/wip"><li>IN PROGRESS</li></a>
@@ -54,35 +63,35 @@ $(function() {
     </div>
 {% else %}
     <div id=titlebar>
-            <p class='df cv'><a target='_self' href="/"><span class=sym>&#9596;</span>&nbsp;&nbsp;David Faraci&nbsp;&nbsp;<span class=sym>&#9598;</sym></a></p>
+        <p class='df cv'><a target='_self' href="/"><span class=sym>&#9596;</span>&nbsp;&nbsp;David Faraci&nbsp;&nbsp;<span class=sym>&#9598;</span></a></p>
         <table class=buttontable>
         <tr>
-            <td><button id=1 class=menu onclick="window.location='/';"><p class='unselected'>Home</p></button><br>&nbsp;</td>
-            <td><button id=2 class=menu onclick="window.location='/cv';"><p class='unselected'>CV</p></button>
-                <br><span id=22 class=dl>&nbsp;<button class=dlb onclick="window.open('cv.pdf');">Download PDF</button></span><span=dlsp>&nbsp;</span></td>
-            <td><button id=3 class=menu onclick="window.location='/publications';"><p class='unselected'>Publications</p></button><br>&nbsp;</td>
-            <td><button id=4 class=menu onclick="window.location='/wip';"><p class='unselected'>In Progress</p></button>
-                <br><span id=44 class=dl>&nbsp;<button class=dlb onclick="window.open('research.pdf');">Research Statement</button></span><span=dlsp>&nbsp;</span></td>
-            <td><button id=5 class=menu onclick="window.location='/opentower';"><p class='unselected'>Open Tower</p></button><br>&nbsp;</td>
-            <td><button id=6 class=menu onclick="window.location='/teaching';"><p class='unselected'>Teaching</p></button>
-                <br><span id=66 class=dl>&nbsp;<button class=dlb onclick="window.open('teaching/portfolio.pdf');">Teaching Portfolio</button></span><span=dlsp>&nbsp;</span></td>
-            <td><button id=7 class=menu onclick="window.location='/misc';"><p class='unselected'>Miscellany</p></button><br>&nbsp;</td>
+            <td><p class='unselected'><button id=1 class=menu onclick="window.location='/about';">About</button></p>
+                <br>&nbsp;</td>
+            <td><p class='unselected'><button id=2 class=menu onclick="window.location='/cv';">CV</button></p>
+                <br><span id=22 class=dl>&nbsp;<button class=dlb onclick="window.open('cv.pdf');">Download&nbsp;PDF</button></span><span class=dlsp>&nbsp;</span></td>
+            <td><p class='unselected'><button id=3 class=menu onclick="window.location='/publications';">Publications</button></p>
+                <br>&nbsp;</td>
+            <td><p class='unselected'><button id=4 class=menu onclick="window.location='/wip';">In&nbsp;Progress</button></p>
+                <br><span id=44 class=dl>&nbsp;<button class=dlb onclick="window.open('research.pdf');">Research&nbsp;Statement</button></span><span class=dlsp>&nbsp;</span></td>
+            <td><p class='unselected'><button id=5 class=menu onclick="window.location='/opentower';">Open&nbsp;Tower</button></p>
+                <br>&nbsp;</td>
+            <td><p class='unselected'><button id=6 class=menu onclick="window.location='/teaching';">Teaching</button></p>
+                <br><span id=66 class=dl>&nbsp;<button class=dlb onclick="window.open('teaching/portfolio.pdf');">Teaching&nbsp;Portfolio</button></span><span class=dlsp>&nbsp;</span></td>
+            <td><p class='unselected'><button id=7 class=menu onclick="window.location='/misc';">Miscellany</button></p>
+                <br>&nbsp;</td>
         </tr>
         </table>
     </div>
-
 {% endif %}
 
-
-
-<div id=sheet>
 {% block contents %}
 {% endblock %}
 <br><br><br>
-<div class=foot>
-<a href="mailto:david.faraci@georgetown.edu">david.faraci@georgetown.edu</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;June 25, 2017
+<div id=foot>
+<a href="mailto:david.faraci@georgetown.edu">david.faraci@georgetown.edu</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;June 26, 2017
 </div>
-
+</div>
 
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">

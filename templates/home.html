@@ -1,17 +1,6 @@
 {% extends "index.html" %}
 {% block contents %}
-<script>underline(1);</script>
-{% if request.MOBILE %}
-    <div class=df>David Faraci</div>
-{% endif %}
-
-<div class=about>
-<div class=pic><img class=me src="me.jpg"></div>
-<p>I am a Lecturer in the McDonough School of Business at Georgetown University and a member of the Georgetown Institute for the Study of Markets and Ethics. I received my Ph.D. in philosophy from Bowling Green State University in 2012 and have since taught at Virginia Tech and UNC Chapel Hill.</p>
-<br>
-<p class=ul>About My Work</p>
-<p>Many of us believe that if anything is truly right or wrong, good or bad, it must be so <span class=it>objectively;</span> it cannot merely be a function of our beliefs, interests, practices or desires. My research aims to understand such objectivity and its implications for the nature of ethical truth, thought and language and, especially, for the possibility of ethical knowledge. Some of my work also travels upstream, focusing on epistemological questions about the nature of knowledge and justification more generally. And some of it travels downstream, addressing questions in normative and applied ethics, often at the intersection of business ethics and political philosophy. I also have an ongoing collaborative project in the experimental philosophy of moral responsibility.</p>
-<br>
-<p>In addition to my research, I am co-founder (with <a href="https://www.k-state.edu/philos/people/faculty/leachkrouse.html">Graham Leach-Krouse</a>) of <a href="http://open-tower.com"><span class=ot>Open Tower</span></a>, developing open source technologies in ser­vice of a more trans­par­ent, in­clu­sive and con­ve­nient acad­e­mia.</p>
-</div>
+<script>$(window).load(function() { footer(0) })</script>
+<div id=home>
+<img class=mebig src="me.jpg" alt="ME.JPG">
 {% endblock %}
