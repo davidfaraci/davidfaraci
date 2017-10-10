@@ -21,8 +21,8 @@
 function underline(cid) {
     document.getElementById(cid).style.textDecoration = 'underline';
     if(cid == '2') { $( '#22' ).fadeIn(); }
+    if(cid == '3') { $( '#33' ).fadeIn(); }
     if(cid == '4') { $( '#44' ).fadeIn(); }
-    if(cid == '6') { $( '#66' ).fadeIn(); }
 }
 </script>
 
@@ -42,6 +42,8 @@ $(function() {
 });
 </script>
 
+<script>window.addEventListener("hashchange", function() { scrollBy(0, -150) })</script>
+
 </head>
 
 <body>
@@ -54,11 +56,10 @@ $(function() {
     <ul>
     <a id=1 target='_self' href="/about"><li>ABOUT</li></a>
     <a id=2 target='_self' href="/cv"><li>CV</li></a>
-    <a id=3 target='_self' href="/publications"><li>PUBLICATIONS</li></a>
-    <a id=4 target='_self' href="/wip"><li>IN PROGRESS</li></a>
+    <a id=3 target='_self' href="/research"><li>RESEARCH</li></a>
+    <a id=4 target='_self' href="/teaching"><li>TEACHING</li></a>
     <a id=5 target='_self' href="/opentower"><li>OPEN TOWER</li></a>
-    <a id=6 target='_self' href="/teaching"><li>TEACHING</li></a>
-    <a id=7 target='_self' href="/misc"><li>MISCELLANY</li></a>
+    <a id=6 target='_self' href="/misc"><li>MISCELLANY</li></a>
     </ul>
     </div>
 {% else %}
@@ -70,15 +71,13 @@ $(function() {
                 <br>&nbsp;</td>
             <td><p class='unselected'><button id=2 class=menu onclick="window.location='/cv';">CV</button></p>
                 <br><span id=22 class=dl>&nbsp;<button class=dlb onclick="window.open('cv.pdf');">Download&nbsp;PDF</button></span><span class=dlsp>&nbsp;</span></td>
-            <td><p class='unselected'><button id=3 class=menu onclick="window.location='/publications';">Publications</button></p>
-                <br>&nbsp;</td>
-            <td><p class='unselected'><button id=4 class=menu onclick="window.location='/wip';">In&nbsp;Progress</button></p>
-                <br><span id=44 class=dl>&nbsp;<button class=dlb onclick="window.open('research.pdf');">Research&nbsp;Statement</button></span><span class=dlsp>&nbsp;</span></td>
+            <td><p class='unselected'><button id=3 class=menu onclick="window.location='/research';">Research</button></p>
+                <br><span id=33 class=dl>&nbsp;<button class=dlb onclick="window.open('research.pdf');">Research&nbsp;Statement</button></span><span class=dlsp>&nbsp;</span></td>
+            <td><p class='unselected'><button id=4 class=menu onclick="window.location='/teaching';">Teaching</button></p>
+                <br><span id=44 class=dl>&nbsp;<button class=dlb onclick="window.open('teaching/portfolio.pdf');">Teaching&nbsp;Portfolio</button></span><span class=dlsp>&nbsp;</span></td>
             <td><p class='unselected'><button id=5 class=menu onclick="window.location='/opentower';">Open&nbsp;Tower</button></p>
                 <br>&nbsp;</td>
-            <td><p class='unselected'><button id=6 class=menu onclick="window.location='/teaching';">Teaching</button></p>
-                <br><span id=66 class=dl>&nbsp;<button class=dlb onclick="window.open('teaching/portfolio.pdf');">Teaching&nbsp;Portfolio</button></span><span class=dlsp>&nbsp;</span></td>
-            <td><p class='unselected'><button id=7 class=menu onclick="window.location='/misc';">Miscellany</button></p>
+            <td><p class='unselected'><button id=6 class=menu onclick="window.location='/misc';">Miscellany</button></p>
                 <br>&nbsp;</td>
         </tr>
         </table>
@@ -89,7 +88,7 @@ $(function() {
 {% endblock %}
 <br><br><br>
 <div id=foot>
-<a class=email href="mailto:david.faraci@georgetown.edu">david.faraci@georgetown.edu</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;June 28, 2017
+<a class=email href="mailto:david.faraci@georgetown.edu">david.faraci@georgetown.edu</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;October 4, 2017
 </div>
 </div>
 

@@ -209,6 +209,7 @@ a.email {
 }
 
 
+
 .it { font-style: italic; }
 .ul { text-decoration: underline; }
 .b { font-weight: bold; }
@@ -255,7 +256,7 @@ a.email {
     background-color: transparent;
     border: none;
     color: #000000;
-    padding: 8px 40px 0 40px;
+    padding: 8px 55px 0 55px;
     text-align: center;
     font-variant: small-caps;
     text-decoration: none;
@@ -311,35 +312,54 @@ button:focus { outline: 0; }
 
 
 .about { text-align: justify; font-size: 1.1em; }
-.medogs { width: 480px; height: 360px; border: 1px solid black; }
-.pic { float: right; padding: 0 0 20px 40px; }
-.ot { font-family: street; font-size: .9em; }
-
+.medogs { float: right; width: 480px; margin: 3px 0 10px 40px; height: 360px; border: 1px solid black; }
+.ot { font-family: 'street'; font-size: .9em; }
+.nogap { margin: 0; padding: 0; }
 
 
 .cvtitle { font-size: 2em }
-.scaps { font-variant: small-caps; font-size: 1.1em; font-weight: bold; line-height: 1.5em; }
+.scaps { font-variant: small-caps; font-size: 1.1em; font-weight: bold; padding-bottom: 3px; }
+.stitle { font-weight: bold; padding-bottom: 3px; }
 .hang { padding-left: 1.5em; text-indent: -.75em; }
+.hangmid { padding-left: 1.5em; text-indent: -.75em; padding-bottom: 10px; }
 .hangend { padding-left: 1.5em; text-indent: -.75em; padding-bottom: 28px; }
-.indent { padding-left: .75em }
+.cvhang { padding-left: 3.25em; text-indent: -3.25em; padding-bottom: 3px; }
+.cvlhang { padding-left: 5.5em; text-indent: -5.5em; padding-bottom: 3px; }
+.cvhangend { padding-left: 3.25em; text-indent: -3.25em; padding-bottom: 28px; }
+.cvlhangend { padding-left: 5.5em; text-indent: -5.5em; padding-bottom: 28px; }
+.cvhangmid { padding-left: 3.25em; text-indent: -3.25em; padding-bottom: 15px; }
+.cvlhangmid { padding-left: 5.5em; text-indent: -5.5em; padding-bottom: 15px; }
+.pad { padding-bottom: 3px; }
+.mid { padding-bottom: 15px; }
+.smid { padding-bottom: 10px; }
+.end { padding-bottom: 28px; }
+.indent { padding-left: .75em; }
 .indentmid { padding-left: .75em; padding-bottom: 10px; }
 .indentend { padding-left: .75em; padding-bottom: 28px; }
+.indentsec { padding-left: .75em; padding-bottom: 38px; }
 .dindent { padding-left: 1.5em }
 .dindentmid { padding-left: 1.5em; padding-bottom: 10px; }
 
 table.teach {
-    padding-bottom: 28px;
+    padding-bottom: 28px; margin: 0;
 }
 
 table.teach td {
-    padding-left: .75em;
-    padding-right: 1.5em;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 2.25em;
     padding-top: .3em;
     padding-bottom: .3em;
     font-size: 1em;
 }
 
 
+
+.rschmenu {
+    text-align: center;
+    font-variant: small-caps;
+    padding-bottom: 25px;
+}
 
 .title { font-size: 1.1em; font-weight: bold; line-height: 1.5em; }
 .access { font-variant: small-caps; font-weight: bold; }

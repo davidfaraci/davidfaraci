@@ -1,8 +1,12 @@
 {% extends "index.html" %}
 {% block contents %}
-<script>underline(6); $(window).load(function() { footer(1) })</script>
+<script>underline(4); $(window).load(function() { footer(1) })</script>
 
 <div id=sheet>
+
+{% if request.MOBILE %}
+    <div class=cvdlm><a href="teaching/portfolio.pdf">Teaching Portfolio</a></div>
+{% endif %}
 
 <div class=center>
 <p class=class>Bioethics</p>
